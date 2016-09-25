@@ -3,6 +3,18 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+ function calcTotal(){
+    var score = 0;
+    $(".symptom:checked").each(function(){
+        score+=parseInt($(this).val(),10);
+    });
+    // score = severity score
+}
+$().ready(function(){
+    $(".symptom").change(function(){
+        calcTotal()
+    });
+});
 
 (function($) {
 

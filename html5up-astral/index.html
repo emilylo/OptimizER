@@ -15,6 +15,8 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&effect=3d-float">
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<script type="text/javascript" scr="/assets/js/main.js"></script>
+		
 	</head>
 	<body>
 
@@ -46,26 +48,46 @@
 								<header>
 									<h1>Symptoms</h1>
 								</header>
-								<div id="symptom-list">
-									<div class="symptom">
-										<p>Internal Injury</p>
-									</div>
-									<div class="symptom">
-										<p>Bleeding</p>
-									</div>
-									<div class="symptom">
-										<p>General Pain</p>
-									</div>
-									<div class="symptom">
-										<p>Irritation or Allergy</p>
-									</div>
-									<div class="symptom">
-										<p>Ingestion or Poison</p>
-									</div>
-									<div class="symptom">
-										<p>Mental Distress</p>
-									</div>
-								</div>
+								<form id="symptom-list">
+									<p>Internal Injury
+									<input type="radio" class="symptom" name="internal" value="1">Mild
+									<input type="radio" class="symptom" name="internal" value="2">Moderate
+									<input type="radio" class="symptom" name="internal" value="3">Severe
+									</p>
+									
+									<p>Bleeding
+									<input type="radio" class="symptom" name="bleeding" value="1">Mild
+									<input type="radio" class="symptom" name="bleeding" value="2">Moderate
+									<input type="radio" class="symptom" name="bleeding" value="3">Severe
+									</p>
+									
+									<p>General Pain
+									<input type="radio" class="symptom" name="genPain" value="1">Mild
+									<input type="radio" class="symptom" name="genPain" value="2">Moderate
+									<input type="radio" class="symptom" name="genPain" value="3">Severe
+									</p>
+									
+									<p>Irritation or Allergy
+									<input type="radio" class="symptom" name="allergy" value="1">Mild
+									<input type="radio" class="symptom" name="allergy" value="2">Moderate
+									<input type="radio" class="symptom" name="allergy" value="3">Severe
+									</p>
+									
+									<p>Ingestion or Poison
+									<input type="radio" class="symptom" name="poison" value="1">Mild
+									<input type="radio" class="symptom" name="poison" value="2">Moderate
+									<input type="radio" class="symptom" name="poison" value="3">Severe
+									</p>
+									
+									<p>Mental Distress
+									<input type="radio" class="symptom" name="distress" value="1">Mild
+									<input type="radio" class="symptom" name="distress" value="2">Moderate
+									<input type="radio" class="symptom" name="distress" value="3">Severe
+									</p>
+								
+								</form>
+
+
 								<!--
 								<a href="#work" class="jumplink pic">
 									<span class="arrow icon fa-chevron-right"><span>See available care centers</span></span>
