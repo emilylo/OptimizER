@@ -162,11 +162,6 @@
 
 						};
 
-						/* Symptom List */
-						$('.symptom').hover(function(){
-							$('.symptom').addClass('.symptom-hover');
-						});
-
 
 					});
 
