@@ -1301,7 +1301,7 @@
 				overflow-y: scroll;
 				background-attachment: fixed;
 				font-size: 14pt;
-				line-height: 1.75em;
+				line-height: 1.5em;
 			}
 
 			input, textarea, select {
@@ -1327,11 +1327,11 @@
 		/* Section/Article */
 
 			header {
-				margin: 0 0 1.5em 0;
+				margin: 0 0 0 0;
 			}
 
 				header > p {
-					margin: 0.5em 0 0 0;
+					margin: 0 0 0 0;
 				}
 
 		/* Button */
@@ -1373,7 +1373,7 @@
 		/* Wrapper */
 
 			#wrapper {
-				width: 60em;
+				width: 45em;
 				margin: 0 auto;
 				opacity: 0.00001;
 			}
@@ -1472,14 +1472,14 @@
 		/* Panels */
 
 			#main {
-				width: 60em;
+				width: 45em;
 				background: #ffffff;
 				box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.25);
 				overflow:auto;
 			}
 
 			.panel {
-				padding: 3.5em 2.5em 3.5em 2.5em;
+				padding: 2em 2.5em 2em 2.5em;
 				position: absolute;
 				top: 0;
 				left: 0;
@@ -1491,7 +1491,7 @@
 
 			#symptoms {
 				padding: 0;
-				height: 60em;
+				height: 45em;
 			}
 
 				#symptoms .pic {
@@ -1560,12 +1560,13 @@
 						left: 0;
 						bottom: 90%;
 						margin: 0;
+
 					}
 
 					#symptoms header > p {
 						position: absolute;
 						left: 0;
-						top: 10%;
+						top: 12%;
 						font-size: 1.5em;
 						letter-spacing: -0.015em;
 						margin-top: 0;
@@ -1575,7 +1576,7 @@
 					font-color: #616161;
 					position: absolute;
 					left: 10%;
-					top: 15%;
+					top: 12%;
 					font-size: 1.5em;
 					letter-spacing: -0.015em;
 					margin-top: 0;
@@ -1700,7 +1701,7 @@
 					padding-top: 1em;
 				}
 
-		/* Me */
+		/* Symptoms */
 
 			#symptoms .pic {
 				width: 100%;
@@ -1720,7 +1721,7 @@
 			}
 
 				#symptoms header > h1 {
-					font-size: 2.15em;
+					font-size: 2em;
 					letter-spacing: -0.025em;
 				}
 
@@ -1779,4 +1780,33 @@
 		color: #fff;
 		font-size: 0.75em;
 	}
+
+	/* For Care Centers Section */
+
+	header h2 {
+		margin-top: 0;
+		padding-top: 0;
+		line-height: normal;
+	}
+
+	.row p {
+		display: inline;
+		margin: 0;
+		padding: 0;
+		line-height: normal;
+		font-size: 0.8em;
+	}
+
+	.row h4 {
+		margin-top: 0;
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: 1em;
+		padding: 0;
+		line-height: normal;
+		font-size: 1em;
+	}
+	 .row i {
+	 	text-indent: 0.5em;
+	 }
 
