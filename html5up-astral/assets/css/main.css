@@ -664,7 +664,7 @@
 /* Basic */
 
 	body {
-		background-color: #42a5f5;
+		background-color: #1a237e;
 		background-image: url("images/overlay.png");/*, url("images/pic09.jpg"); */
 		background-repeat: repeat, no-repeat;
 		background-size: auto, 100% 100%;
@@ -1401,7 +1401,7 @@
 
 			#symptoms {
 				padding: 0;
-				height: 45em;
+				height: 35em;
 			}
 
 				#symptoms .pic {
@@ -1708,6 +1708,11 @@
 	/* For symptoms section behavior*/
 	.symptom {
 		background-color: #eeeeee;
+	}
+
+	.symptom-hover{
+		background-color: #f5f5f5;
+		cursor: pointer;
 	}
 
 	.symptom p {
