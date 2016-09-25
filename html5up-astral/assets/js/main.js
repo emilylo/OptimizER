@@ -9,6 +9,7 @@
         score+=parseInt($(this).val(),10);
     });
     // score = severity score
+	$("input[name=sum]").val(score)
 }
 $().ready(function(){
     $(".symptom").change(function(){

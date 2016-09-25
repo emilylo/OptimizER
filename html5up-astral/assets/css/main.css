@@ -9,7 +9,7 @@
 */
 
 /* Reset */
-
+	
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset,  , label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
@@ -207,67 +207,11 @@
 		clear: none;
 		margin-left: 0;
 	}
-/*
-	.\38 u, .\38 u\24 {
-		width: 50%;
-		clear: none;
-		margin-left: 0;
-	}
-
-	.\37 u, .\37 u\24 {
-		width: 37.5%;
-		clear: none;
-		margin-left: 0;
-	}
-
-	.\36 u, .\36 u\24 {
-		width: 25%;
-		clear: none;
-		margin-left: 0;
-	}
-
-	.\35 u, .\35 u\24 {
-		width: 12.5%;
-		clear: none;
-		margin-left: 0;
-	}
-/*
-	.\34 u, .\34 u\24 {
-		width: 50%;
-		clear: none;
-		margin-left: 0;
-	}
-
-	.\33 u, .\33 u\24 {
-		width: 37.5%;
-		clear: none;
-		margin-left: 0;
-	}
-
-	.\32 u, .\32 u\24 {
-		width: 25%;
-		clear: none;
-		margin-left: 0;
-	}
-
-	.\31 u, .\31 u\24 {
-		width: 12.5%;
-		clear: none;
-		margin-left: 0;
-	} */
 
 	.\31 2u\24 + *,
 	.\31 1u\24 + *,
 	.\31 0u\24 + *,
-	.\39 u\24 + *,
-/*	.\38 u\24 + *,
-	.\37 u\24 + *,
-	.\36 u\24 + *,
-	.\35 u\24 + *,
-	.\34 u\24 + *,
-	.\33 u\24 + *,
-	.\32 u\24 + *,
-	.\31 u\24 + * */{
+	.\39 u\24 + *{
 		clear: left;
 	}
 
@@ -286,34 +230,6 @@
 	.\-8u {
 		margin-left: 25%;
 	}
-/*
-	.\-7u {
-		margin-left: 58.33333%;
-	}
-
-	.\-6u {
-		margin-left: 50%;
-	}
-
-	.\-5u {
-		margin-left: 41.66667%;
-	}
-
-	.\-4u {
-		margin-left: 33.33333%;
-	}
-
-	.\-3u {
-		margin-left: 25%;
-	}
-
-	.\-2u {
-		margin-left: 16.66667%;
-	}
-
-	.\-1u {
-		margin-left: 8.33333%;
-	}*/
 
 	@media screen and (min-width: 737px) {
 
@@ -926,14 +842,12 @@
 	textarea {
 		padding: 0.75em 1em;
 	}
-
-	input[type="checkbox"],
-	input[type="radio"] {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-ms-appearance: none;
-		appearance: none;
-		display: block;
+	
+	input[type="radio"]{
+		align: right;
+	}
+	
+	input[type="checkbox"]{
 		float: left;
 		margin-right: -2em;
 		opacity: 0;
@@ -941,8 +855,7 @@
 		z-index: -1;
 	}
 
-		input[type="checkbox"] + label,
-		input[type="radio"] + label {
+		input[type="checkbox"] + label{
 			text-decoration: none;
 			color: #616161;
 			cursor: pointer;
@@ -954,18 +867,15 @@
 			position: relative;
 		}
 
-			input[type="checkbox"] + label:before,
-			input[type="radio"] + label:before {
+			input[type="checkbox"] + label:before{
 				-moz-osx-font-smoothing: grayscale;
 				-webkit-font-smoothing: antialiased;
 				font-family: FontAwesome;
 				font-style: normal;
 				font-weight: normal;
-				text-transform: none !important;
 			}
 
-			input[type="checkbox"] + label:before,
-			input[type="radio"] + label:before {
+			input[type="checkbox"] + label:before{
 				background: rgba(144, 144, 144, 0.25);
 				border-radius: 3px;
 				content: '';
@@ -979,15 +889,13 @@
 				width: 1.65em;
 			}
 
-		input[type="checkbox"]:checked + label:before,
-		input[type="radio"]:checked + label:before {
+		input[type="checkbox"]:checked + label:before{
 			background: #2e3842;
 			color: #fff;
 			content: '\f00c';
 		}
 
-		input[type="checkbox"]:focus + label:before,
-		input[type="radio"]:focus + label:before {
+		input[type="checkbox"]:focus + label:before{
 			box-shadow: 0 0 0 2px #21b2a6;
 		}
 
