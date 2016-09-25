@@ -102,37 +102,87 @@
 								<header>
 									<h2>Refine Symptom Details</h2>
 								</header>
-								<div class="detailed-symptoms-list">
-									<div class="symptom-details">
-										<h5>Location</h5>
-										<ul>
-											<li>Head</li>
-											<li>Neck and Shoulders</li>
-											<li>Chest</li>
-											<li>Abdomen</li>
-											<li>Back</li>
-											<li>Arms</li>
-											<li>Legs</li>
-											<li>Other</li>
-										</ul>
-									</div>
-									<div>
-										<h5>Severity</h5>
-										<ul>
-											<li>Mild</li>
-											<li>Moderate</li>
-											<li>Severe</li>
-										</ul>
-									</div>
-									<div>
-										<h5>Duration</h5>
-										<ul>
-											<li>Minutes</li>
-											<li>Hours</li>
-											<li>Days</li>
-										</ul>
-									</div>									
+								<table class="detailed-symptoms-list" border="0">
+									<tr>
+										<th>Location</th>
+										<th colspan="3">Severity</th>
+										<th colspan="2">Duration</th>
+									</tr>
+									<tr>
+										<th></th>
+										<th>Mild</th>
+										<th>Moderate</th>
+										<th>Severe</th>
+										<th>Days</th>
+										<th>Time</th>
+									</tr>
+									<tr>
+										<td>Head</td>
+										<td><input type="radio" class="symptom" name="head" value="1"/></td>
+										<td><input type="radio" class="symptom" name="head" value="2"/></td>
+										<td><input type="radio" class="symptom" name="head" value="3"/></td>
+										<th><input type='text'/></td>
+										<td><input type="time" class="details" name="usr_time"/></td>
+									</tr>
+									<tr>
+										<td>Neck and Shoulders</td>
+										<td><input type="radio" class="symptom" name="neck" value="1"/></td>
+										<td><input type="radio" class="symptom" name="neck" value="2"/></td>
+										<td><input type="radio" class="symptom" name="neck" value="3"/></td>
+										<th><input type='text'/></td>
+										<td><input type="time" class="details" name="usr_time"/></td>
+									</tr>
+									<tr>
+										<td>Chest</td>
+										<td><input type="radio" class="symptom" name="chest" value="1"/></td>
+										<td><input type="radio" class="symptom" name="chest" value="2"/></td>
+										<td><input type="radio" class="symptom" name="chest" value="3"/></td>
+										<th><input type='text'/></td>
+										<td><input type="time" class="details" name="usr_time"/></td>
+									</tr>
+									<tr>
+										<td>Abdomen</td>
+										<td><input type="radio" class="symptom" name="abs" value="1"/></td>
+										<td><input type="radio" class="symptom" name="abs" value="2"/></td>
+										<td><input type="radio" class="symptom" name="abs" value="3"/></td>
+										<th><input type='text'/></td>
+										<td><input type="time" class="details" name="usr_time"/></td>
+									</tr>
+									<tr>
+										<td>Back</td>
+										<td><input type="radio" class="symptom" name="back" value="1"/></td>
+										<td><input type="radio" class="symptom" name="back" value="2"/></td>
+										<td><input type="radio" class="symptom" name="back" value="3"/></td>
+										<th><input type='text'/></td>
+										<td><input type="time" class="details" name="usr_time"/></td>
+									</tr>
+									<tr>
+										<td>Arms</td>
+										<td><input type="radio" class="symptom" name="arms" value="1"/></td>
+										<td><input type="radio" class="symptom" name="arms" value="2"/></td>
+										<td><input type="radio" class="symptom" name="arms" value="3"/></td>
+										<th><input type='text'/></td>
+										<td><input type="time" class="details" name="usr_time"/></td>
+									</tr>
+									<tr>
+										<td>Legs</td>
+										<td><input type="radio" class="symptom" name="legs" value="1"/></td>
+										<td><input type="radio" class="symptom" name="legs" value="2"/></td>
+										<td><input type="radio" class="symptom" name="legs" value="3"/></td>
+										<th><input type='text'/></td>
+										<td><input type="time" class="details" name="usr_time"/></td>
+									</tr>
+									<tr>
+										<td>Other:<input type="text" ></td>
+										<td><input type="radio" class="symptom" name="other" value="1"/></td>
+										<td><input type="radio" class="symptom" name="other" value="2"/></td>
+										<td><input type="radio" class="symptom" name="other" value="3"/></td>
+										<th><input type='text'/></td>
+										<td><input type="time" class="details" name="usr_time"/></td>
+									</tr>					
+								</table>
 								
+								Total Severity Score: <input type="text" name="sum" />
 							</article>
 						<!-- Care Centers -->
 							<article id="care-centers" class="panel">
